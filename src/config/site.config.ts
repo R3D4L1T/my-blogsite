@@ -264,7 +264,7 @@ const siteConfig: SiteConfig = {
   // import this file, uses the same values. Change them there.
   name: SITE_NAME,
   description:
-    'A free, fast Astro 7 starter theme to build anything on: 44 designed components, 12 colour themes, dark mode, and built-in i18n.',
+    'Developer passionate about cybersecurity, networking and robotics, specializing in creating comprehensive software and hardware solutions',
   tagline: 'Astro 7 starter theme to build anything on',
   footerNote: 'Free & open source · MIT licensed',
   url: SITE_URL || SITE_URL_FALLBACK,
@@ -272,17 +272,17 @@ const siteConfig: SiteConfig = {
   // Point this at a file in `public/` to use your own — it has to be a raster
   // (PNG or JPEG): social platforms don't render SVG share images.
   ogImage: '/og/default.png',
-  author: 'Hans Martens',
-  email: 'hello@hansmartens.dev',
+  author: 'R3D4L1T',
+  email: 'lonewolfforever27@gmail.com',
   address: {
     street: '',
-    city: 'Amsterdam',
+    city: 'Cajamarca',
     state: '',
     zip: '',
-    country: 'the Netherlands',
+    country: 'Peru',
   },
   socialLinks: [
-    'https://github.com/hansmartensdev',
+    'https://github.com/R3D4L1T',
     'https://x.com/hansmartens_dev',
     'https://www.linkedin.com/in/hansmartensdev',
     'https://bsky.app/profile/hansmartensdev.bsky.social',
