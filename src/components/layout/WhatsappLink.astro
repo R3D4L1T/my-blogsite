@@ -6,13 +6,17 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<button type="button" class:list={['whatsapp-btn', className]} aria-label="Chatear por WhatsApp">
+<button
+  type="button"
+  id="whatsapp-trigger"
+  class:list={['whatsapp-btn', className]}
+  aria-label="Chatear por WhatsApp"
+>
   <svg
     class="whatsapp-icon"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
+    fill="currentColor"
     aria-hidden="true"
   >
     <path
@@ -46,6 +50,20 @@ const { class: className } = Astro.props;
   .whatsapp-icon {
     width: 24px;
     height: 24px;
-    color: #075e54;
+    color: #71717a;
   }
 </style>
+
+<script>
+  const button = document.getElementById('whatsapp-trigger');
+
+  button?.addEventListener('click', () => {
+    const phone = '+51926713597';
+    const message = 'hello' || '';
+    const encodedMessage = encodeURIComponent(message);
+
+    const url = `https://wa.me/${phone}${message ? `?text=${encodedMessage}` : ''}`;
+
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+</script>
