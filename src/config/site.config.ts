@@ -373,11 +373,11 @@ const siteConfig: SiteConfig = {
   branding: {
     logo: {
       alt: 'Astro Rocket',
-      // image: '/logo.svg', // Optional: set to a file in public/ to use a custom logo image instead of the letter monogram.
-      imageUrl: '/favicon.svg',
+      image: '/avatar.svg', // Optional: set to a file in public/ to use a custom logo image instead of the letter monogram.
+      imageUrl: '/avatar.svg',
     },
     favicon: {
-      svg: '/favicon.svg',
+      svg: '/avatar.svg',
     },
     colors: {
       themeColor: THEME_COLOR,
