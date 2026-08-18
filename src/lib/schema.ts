@@ -30,8 +30,8 @@ export function createPersonSchema(): WithContext<Person> {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Astro Rocket',
-    jobTitle: 'Web Designer & Developer',
+    name: 'Redalit Dev',
+    jobTitle: 'Cybersecurity & Networking Engineer',
     url: siteConfig.url,
     email: siteConfig.email,
     ...(siteConfig.authorImage ? { image: `${siteConfig.url}${siteConfig.authorImage}` } : {}),
@@ -40,8 +40,8 @@ export function createPersonSchema(): WithContext<Person> {
         address: {
           '@type': 'PostalAddress',
           addressLocality: siteConfig.address.city,
-          addressRegion: 'Noord-Brabant',
-          addressCountry: 'NL',
+          addressRegion: 'Cajamarca',
+          addressCountry: 'PE',
         },
       }
       : {}),
@@ -66,13 +66,13 @@ export function createProfessionalServiceSchema(): WithContext<LocalBusiness> {
         address: {
           '@type': 'PostalAddress',
           addressLocality: siteConfig.address.city,
-          addressRegion: 'Noord-Brabant',
-          addressCountry: 'NL',
+          addressRegion: 'Cajamarca',
+          addressCountry: 'PE',
         },
       }
       : {}),
     areaServed: [
-      { '@type': 'Country', name: 'Netherlands' },
+      { '@type': 'Country', name: 'Peru' },
       { '@type': 'Country', name: 'Worldwide' },
     ],
     sameAs: siteConfig.socialLinks,
