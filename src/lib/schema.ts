@@ -37,13 +37,13 @@ export function createPersonSchema(): WithContext<Person> {
     ...(siteConfig.authorImage ? { image: `${siteConfig.url}${siteConfig.authorImage}` } : {}),
     ...(siteConfig.address?.city
       ? {
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: siteConfig.address.city,
-            addressRegion: 'Noord-Brabant',
-            addressCountry: 'NL',
-          },
-        }
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: siteConfig.address.city,
+          addressRegion: 'Noord-Brabant',
+          addressCountry: 'NL',
+        },
+      }
       : {}),
     sameAs: siteConfig.socialLinks,
   };
@@ -63,13 +63,13 @@ export function createProfessionalServiceSchema(): WithContext<LocalBusiness> {
     ...(siteConfig.authorImage ? { image: `${siteConfig.url}${siteConfig.authorImage}` } : {}),
     ...(siteConfig.address?.city
       ? {
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: siteConfig.address.city,
-            addressRegion: 'Noord-Brabant',
-            addressCountry: 'NL',
-          },
-        }
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: siteConfig.address.city,
+          addressRegion: 'Noord-Brabant',
+          addressCountry: 'NL',
+        },
+      }
       : {}),
     areaServed: [
       { '@type': 'Country', name: 'Netherlands' },
@@ -95,10 +95,10 @@ export function createOrganizationSchema(): WithContext<Organization> {
     sameAs: siteConfig.socialLinks,
     contactPoint: siteConfig.phone
       ? {
-          '@type': 'ContactPoint',
-          telephone: siteConfig.phone,
-          contactType: 'customer service',
-        }
+        '@type': 'ContactPoint',
+        telephone: siteConfig.phone,
+        contactType: 'customer service',
+      }
       : undefined,
   };
 }
@@ -134,11 +134,11 @@ export function createBlogPostSchema(post: {
       name: siteConfig.name,
       ...(siteConfig.branding.logo.imageUrl
         ? {
-            logo: {
-              '@type': 'ImageObject',
-              url: `${siteConfig.url}${siteConfig.branding.logo.imageUrl}`,
-            },
-          }
+          logo: {
+            '@type': 'ImageObject',
+            url: `${siteConfig.url}${siteConfig.branding.logo.imageUrl}`,
+          },
+        }
         : {}),
     },
     mainEntityOfPage: {

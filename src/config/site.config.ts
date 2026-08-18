@@ -265,8 +265,8 @@ const siteConfig: SiteConfig = {
   name: SITE_NAME,
   description:
     'Developer passionate about cybersecurity, networking and robotics, specializing in creating comprehensive software and hardware solutions',
-  tagline: 'Astro 7 starter theme to build anything on',
-  footerNote: 'Free & open source · MIT licensed',
+  tagline: 'Where robotics, networking, and cybersecurity come together to create comprehensive solutions',
+  footerNote: 'Free & open source · Built for secure & connected robotics',
   url: SITE_URL || SITE_URL_FALLBACK,
   // Generated at build time from `name`, `tagline` and the brand colour below.
   // Point this at a file in `public/` to use your own — it has to be a raster
@@ -283,17 +283,17 @@ const siteConfig: SiteConfig = {
   },
   socialLinks: [
     'https://github.com/R3D4L1T',
-    'https://x.com/hansmartens_dev',
-    'https://www.linkedin.com/in/hansmartensdev',
-    'https://bsky.app/profile/hansmartensdev.bsky.social',
+    'https://x.com/redalit02',
+    'https://www.linkedin.com',
+    'https://bsky.app',
   ],
   header: {
     // Flip to `true` to show the social icons (incl. GitHub) in the header.
     showSocialLinks: false,
   },
   twitter: {
-    site: 'https://x.com/hansmartens_dev',
-    creator: '@hansmartens_dev',
+    site: 'https://x.com/redalit02',
+    creator: '@redalit02',
   },
   verification: {
     google: GOOGLE_SITE_VERIFICATION,
@@ -372,7 +372,7 @@ const siteConfig: SiteConfig = {
   i18n: i18nConfig,
   branding: {
     logo: {
-      alt: 'Astro Rocket',
+      alt: 'Redalit Dev',
       image: '/avatar.svg', // Optional: set to a file in public/ to use a custom logo image instead of the letter monogram.
       imageUrl: '/avatar.svg',
     },
